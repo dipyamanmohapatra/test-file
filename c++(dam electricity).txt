@@ -1,0 +1,23 @@
+#include<stdio.h>
+#define g 9.8
+int main(void)
+{
+  int height;
+  double flow,density,mass,work,efficiency,ele,time;
+    printf("Enter the height of the dam\n");
+    scanf("%d",&height);
+    printf("Enter the flow of water per second\n");
+    scanf("%lf",&flow);
+    printf("Enter the density of water\n");
+    scanf("%lf",&density);
+    printf("Enter the efficiency\n");
+    scanf("%lf",&efficiency);
+    printf("Enter the time of water flow in sec\n");
+    scanf("%lf",&time);
+      mass=density*time*flow;
+      work=mass*g*height;
+      ele=work*efficiency;
+        printf("The work done is %lf",work);
+        print("The amount of electricity produced is %lf",ele);
+  return(0);
+} 
